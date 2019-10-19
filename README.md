@@ -19,4 +19,4 @@ Contém o Original Array, Processed Array e Sorted Array das 100 execuções do 
 * nome_do_alg_n_runtime.txt
 Contém o tempo de execução das 100 execuções do algoritmo
 * nome_do_alg_n_subarray.txt
-Contém o subarray ordenado das 100 execuções do algoritmo
+Contém o número de elementos ordenados corretamente das 100 execuções do algoritmo
