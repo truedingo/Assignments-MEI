@@ -1,7 +1,7 @@
 from random import *
 
-n = 100
-eps = 1.0/n
+n = 10000
+eps = 0.5/n
 maxr = n/2
 
 f = open("data.in","w")

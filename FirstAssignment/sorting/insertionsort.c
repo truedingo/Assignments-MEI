@@ -66,9 +66,9 @@ int main() {
         clock_t start, end;
 	double cpu_time_used;
 
-        fp = fopen("/Users/dingo/Desktop/Mestrado/MEI/FirstAssignment/sorting/insert_n_subarray.txt", "a");
-	fp2 = fopen("/Users/dingo/Desktop/Mestrado/MEI/FirstAssignment/sorting/insert_n_data.txt", "a");
-	fp3 = fopen("/Users/dingo/Desktop/Mestrado/MEI/FirstAssignment/sorting/insert_n_runtime.txt", "a");  
+        fp = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/insert_n_subarray.txt", "a");
+	fp2 = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/insert_n_data.txt", "a");
+	fp3 = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/insert_n_runtime.txt", "a");  
 
         scanf("%lf",&eps);
         scanf("%d",&n);

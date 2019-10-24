@@ -69,9 +69,9 @@ void bubble_sort (int *a, int n) {
 
 int main() {
 
-        fp = fopen("/Users/dingo/Desktop/Mestrado/MEI/FirstAssignment/sorting/bubble_n_subarray.txt", "a");
-	    fp2 = fopen("/Users/dingo/Desktop/Mestrado/MEI/FirstAssignment/sorting/bubble_n_data.txt", "a");
-	    fp3 = fopen("/Users/dingo/Desktop/Mestrado/MEI/FirstAssignment/sorting/bubble_n_runtime.txt", "a");  
+        fp = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/bubble_n_subarray.txt", "a");
+	    fp2 = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/bubble_n_data.txt", "a");
+	    fp3 = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/bubble_n_runtime.txt", "a");
 
         int n, i;
         clock_t start, end;
