@@ -14,6 +14,9 @@ double eps;
 FILE * fp;
 FILE * fp2;
 FILE * fp3;
+FILE * fp4;
+
+int comp=0;
 
 double r(){
     return (double)rand() / (double)RAND_MAX ;
@@ -50,13 +53,16 @@ int partition(int A[], int p, int q) {
  
   int i = p - 1;
   for(int j = p; j <= q; j++) {
+	  comp++;
 	if (r() > eps) { 	// no failure	
-		if(A[j] <= A[q])
+		if(A[j] <= A[q]){
       			swap(&A[++i], &A[j]);
+		}
 	}
 	else {			// failure
-		if (A[j] > A[q]) 
+		if (A[j] > A[q]){ 
 			swap(&A[++i], &A[j]);
+		}
 	}
   }
  
@@ -75,9 +81,11 @@ void quicksort(int A[], int p, int q) {
 
 int main() {
 
-	        fp = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/quick_n_subarray.txt", "a");
+	fp = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/quick_n_subarray.txt", "a");
 	fp2 = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/quick_n_data.txt", "a");
-	fp3 = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/quick_n_runtime.txt", "a"); 
+	fp3 = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/quick_n_runtime.txt", "a");
+	fp4 = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/quick_comparisons.txt", "a");
+
 	int n, i;
 	clock_t start, end;
 	double cpu_time_used;
@@ -107,7 +115,12 @@ int main() {
 
 	cpu_time_used = ((double) (end - start));
 	fprintf(fp3, "%lf\n", cpu_time_used);
-	fclose(fp3); 
+	fclose(fp3);
+
+	fprintf(fp4, "%d\n", comp);
+    fclose(fp4);
+
+
 
 	fprintf(fp2, "Processed array: ");
 	printf("%d",A[0]);

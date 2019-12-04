@@ -13,6 +13,9 @@ double eps;
 FILE * fp;
 FILE * fp2;
 FILE * fp3;
+FILE * fp4;
+
+int comp=0;
 
 // computes the length of the longest non-decreasing string
 //
@@ -42,6 +45,7 @@ void merge (int *a, int n, int m) {
     int i, j, k;
     int *x = malloc(n * sizeof (int));
     for (i = 0, j = m, k = 0; k < n; k++) {
+        comp++;
         if (r() > eps) {			//no failure
 		x[k] = j == n ? a[i++]
              	: i == m      ? a[j++]
@@ -77,6 +81,8 @@ int main() {
     fp = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/merge_n_subarray.txt", "a");
 	fp2 = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/merge_n_data.txt", "a");
 	fp3 = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/merge_n_runtime.txt", "a");
+    fp4 = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/merge_comparisons.txt", "a");
+
 
         int n, i;
         clock_t start, end;
@@ -106,7 +112,10 @@ int main() {
 
         cpu_time_used = ((double) (end - start));
 	    fprintf(fp3, "%lf\n", cpu_time_used);
-	    fclose(fp3); 
+	    fclose(fp3);
+        
+        fprintf(fp4, "%d\n", comp);
+        fclose(fp4); 
 
         fprintf(fp2, "Processed array: ");
         printf("%d",A[0]);

@@ -1,0 +1,184 @@
+3*5
+7+2
+9
+100/5
+a <- 3*5
+a
+ls(9)
+ls()
+clear
+cls
+a <- 43 + 323 + 2
+a
+b <- 23 + a
+b
+ls()
+a
+b
+b <- b + a + a
+b
+ls()
+ls(b)
+ls("b")
+ls()
+ls(1)
+ls(2)
+rm(list=ls())#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100")#
+df = read.table("insert_n_subarray.txt")#
+data_insert = unlist(df,use.names = FALSE)#
+#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100")#
+df = read.table("bubble_n_subarray.txt")#
+data_bubble = unlist(df,use.names = FALSE)#
+#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100")#
+df = read.table("quick_n_subarray.txt")#
+data_quick = unlist(df,use.names = FALSE)#
+#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100")#
+df = read.table("merge_n_subarray.txt")#
+data_merge = unlist(df,use.names = FALSE)#
+#
+datax <- 1:100#
+datay <- c(data_bubble)#
+datax <- c(datax)#
+#
+plot(datax, datay, type = "n",#
+col = "red", #
+xlab = "Number of elements", #
+ylab = "Maximum ordered elements",#
+ylim= c(0,100),#
+main = "Largest sorted subarrays size of Sorting Algorithms")
+rm(list=ls())#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100")#
+df = read.table("insert_n_subarray.txt")#
+data_insert = unlist(df,use.names = FALSE)#
+#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100")#
+df = read.table("bubble_n_subarray.txt")#
+data_bubble = unlist(df,use.names = FALSE)#
+#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100")#
+df = read.table("quick_n_subarray.txt")#
+data_quick = unlist(df,use.names = FALSE)#
+#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100")#
+df = read.table("merge_n_subarray.txt")#
+data_merge = unlist(df,use.names = FALSE)#
+#
+datax <- 1:100#
+datay <- c(data_bubble)#
+datax <- c(datax)#
+#
+plot(datax, datay, type = "l",#
+col = "red", #
+xlab = "Number of elements", #
+ylab = "Maximum ordered elements",#
+ylim= c(0,100),#
+main = "Largest sorted subarrays size of Sorting Algorithms")
+rm(list=ls())#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100/1")#
+df = read.table("insert_n_subarray.txt")#
+data_insert1 = unlist(df,use.names = FALSE)#
+#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100/2")#
+df = read.table("insert_n_subarray.txt")#
+data_insert2 = unlist(df,use.names = FALSE)#
+#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100/3")#
+df = read.table("insert_n_subarray.txt")#
+data_insert3 = unlist(df,use.names = FALSE)#
+#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100/4")#
+df = read.table("insert_n_subarray.txt")#
+data_insert4 = unlist(df,use.names = FALSE)#
+#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100/5")#
+df = read.table("insert_n_subarray.txt")#
+data_insert5 = unlist(df,use.names = FALSE)#
+di1 = mean(data_insert1)#
+di2 = mean(data_insert2)#
+di3 = mean(data_insert3)#
+di4 = mean(data_insert4)#
+di5 = mean(data_insert5)#
+datax <- 1:4#
+datay <- c(di1, di2, di3, di4)#
+datax <- c(datax)#
+#
+plot(datax, datay, type = "l",#
+col = "red", #
+xlab = "Number of elements", #
+ylab = "Maximum ordered elements",#
+ylim= c(0,100),#
+main = "Largest sorted subarrays size of Sorting Algorithms")
+rm(list=ls())#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100")#
+df = read.table("insert_n_subarray.txt")#
+data_insert = unlist(df,use.names = FALSE)#
+#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100")#
+df = read.table("bubble_n_subarray.txt")#
+data_bubble = unlist(df,use.names = FALSE)#
+#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100")#
+df = read.table("quick_n_subarray.txt")#
+data_quick = unlist(df,use.names = FALSE)#
+#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100")#
+df = read.table("merge_n_subarray.txt")#
+data_merge = unlist(df,use.names = FALSE)#
+#
+datax <- 1:100#
+data_bubbley <- c(data_bubble)#
+data_quicky <- c(data_quick)#
+data_inserty <- c(data_insert)#
+data_mergey <- c(data_merge)#
+datax <- c(datax)#
+plot(datax, data_bubbley , type = "l",#
+col = "red", #
+xlab = "Number of elements", #
+ylab = "Maximum ordered elements",#
+ylim= c(0,100),#
+main = "Largest sorted subarrays size of Sorting Algorithms")#
+#
+points(datax, data_inserty, col="blue")#
+lines(datax, data_inserty, col = "blue", lty=1)#
+#
+points(datax, data_quicky, col="green")#
+lines(datax, data_quicky, col = "green", lty=1)#
+#
+points(datax, data_mergey, col="yellow")#
+lines(datax, data_mergey, col = "yellow", lty=1)
+rm(list=ls())#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100")#
+df = read.table("insert_n_subarray.txt")#
+data_insert = unlist(df,use.names = FALSE)#
+#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100")#
+df = read.table("bubble_n_subarray.txt")#
+data_bubble = unlist(df,use.names = FALSE)#
+#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100")#
+df = read.table("quick_n_subarray.txt")#
+data_quick = unlist(df,use.names = FALSE)#
+#
+setwd("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/parametros_base/100")#
+df = read.table("merge_n_subarray.txt")#
+data_merge = unlist(df,use.names = FALSE)#
+#
+datax <- 1:100#
+data_bubbley <- c(data_bubble)#
+data_quicky <- c(data_quick)#
+data_inserty <- c(data_insert)#
+data_mergey <- c(data_merge)#
+datax <- c(datax)#
+plot(datax, data_bubbley , type = "l",#
+col = "red", #
+xlab = "Number of elements", #
+ylab = "Maximum ordered elements",#
+ylim= c(0,100),#
+main = "Largest sorted subarrays size of Sorting Algorithms")#
+lines(datax, data_inserty, col = "blue", lty=1)#
+lines(datax, data_quicky, col = "green", lty=1)#
+lines(datax, data_mergey, col = "yellow", lty=1)

@@ -13,6 +13,9 @@ double eps;
 FILE * fp;
 FILE * fp2;
 FILE * fp3;
+FILE * fp4;
+
+int comp=0;
 
 // computes the length of the longest non-decreasing string
 //
@@ -43,6 +46,7 @@ void insertion_sort(int *a, int n) {
 		int tmp = a[i];
 		size_t j = i;
 		while(j > 0) {
+                        comp++;
 			if (r() > eps){		//no failure
 				if (tmp >= a[j-1])
 					break;
@@ -68,7 +72,9 @@ int main() {
 
         fp = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/insert_n_subarray.txt", "a");
 	fp2 = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/insert_n_data.txt", "a");
-	fp3 = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/insert_n_runtime.txt", "a");  
+	fp3 = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/insert_n_runtime.txt", "a");
+        fp4 = fopen("/Users/dingo/Desktop/Mestrado/MEI/Assignments-MEI/FirstAssignment/sorting/testes/insert_comparisons.txt", "a");  
+  
 
         scanf("%lf",&eps);
         scanf("%d",&n);
@@ -95,6 +101,9 @@ int main() {
         cpu_time_used = ((double) (end - start));
 	fprintf(fp3, "%lf\n", cpu_time_used);
 	fclose(fp3);
+
+        fprintf(fp4, "%d\n", comp);
+        fclose(fp4);
 
         fprintf(fp2, "Processed array: ");
         printf("%d",A[0]);
